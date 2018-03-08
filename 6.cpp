@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int i,a[100000],j,n,c=0,swapped,temp;
+    int i,a[100000],j,n,s=0,swapped,temp;
     cout<<"enter number of elements\n";
     cin>>n;
     for(i=0;i<n;i++)
@@ -30,11 +30,12 @@ int main()
                 if(a[i]==a[j])
                 {
               cout<<a[i];
-                    c=c+1;
+                    s=s+1;
                 }
             }
         }
-    if(c==0){
+    if(s==0)
+    {
         printf("unique");
     }
     return 0;
